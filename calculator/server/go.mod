@@ -4,5 +4,6 @@ go 1.16
 
 require (
 	github.com/cmwylie19/go-grpc-course v0.0.0-20210415214454-798f849c1b6b // indirect
+	github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210415232515-76c76b5e6c65 // indirect
 	google.golang.org/grpc v1.37.0 // indirect
 )
