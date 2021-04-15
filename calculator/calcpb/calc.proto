@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package calc;
+option go_package="/calculator/calcpb";
+
+message Calc{
+    uint32 num_one = 1;
+    uint32 num_two = 2;
+}
+
+message CalcRequest {
+    Calc calc =1;
+}
+
+message CalcResponse {
+    uint32 result =1;
+}
+
+service CalcService{
+    rpc Calc(CalcRequest) returns (CalcResponse) {};
+}
