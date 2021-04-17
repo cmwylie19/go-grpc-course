@@ -6,6 +6,8 @@ github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210414232630-0a8ac60a
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210414232630-0a8ac60aadf4/go.mod h1:amIHFrMM/iSetDXmGZBe1YYFULVGeFxUTTSaAw0YY3Q=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210415214454-798f849c1b6b h1:KzozUXPcTBI2K8Ad2RDePNc3yaxo3BVkGQeDtBC9Uhk=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210415214454-798f849c1b6b/go.mod h1:amIHFrMM/iSetDXmGZBe1YYFULVGeFxUTTSaAw0YY3Q=
+github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210417142537-b7397b0b4a4c h1:enIegia4sGTycWyj7VloyPKqU4eSl2vx8qacRdXeJSY=
+github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210417142537-b7397b0b4a4c/go.mod h1:1WChH4JkBXV61Dg9HNQOZ3K3WVF6RQ4R60beZ0YW5c4=
 github.com/cncf/udpa/go v0.0.0-20201120205902-5459f2c99403/go.mod h1:WmhPx2Nbnhtbo57+VJT5O0JRkEi1Wbu0z5j0R8u5Hbk=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
