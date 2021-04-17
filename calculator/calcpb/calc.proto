@@ -12,12 +12,12 @@ message Primes {
     uint32 num =1;
 }
 
-message PrimesRequest {
-    Primes primes =1;
+message PrimeNumberDecompositionRequest {
+    int64 number =1;
 }
 
-message PrimesResponse {
-    string result =1;
+message PrimeNumberDecompositionResponse {
+    int64 prime_factor =1;
 }
 
 message CalcRequest {
@@ -30,5 +30,5 @@ message CalcResponse {
 
 service CalcService{
     rpc Calc(CalcRequest) returns (CalcResponse) {};
-    rpc Primes(PrimesRequest) returns (stream PrimesResponse) {};
+    rpc PrimeNumberDecomposition (PrimeNumberDecompositionRequest) returns (stream PrimeNumberDecompositionResponse) {}
 }
