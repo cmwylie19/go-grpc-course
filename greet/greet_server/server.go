@@ -26,7 +26,7 @@ func (*server) Greet(ctx context.Context, req *greetpb.GreetRequest) (*greetpb.G
 
 func (*server) GreetManyTimes(req *greetpb.GreetManyTimesRequest, stream greetpb.GreetService_GreetManyTimesServer) error {
 	fmt.Printf("GreetManyTImes function was invoked: %v", req)
-	firstName := req.GetGreet().GetFirstName()
+	firstName := "tesrt"
 	for i := 0; i < 10; i++ {
 		result := "Hello " + firstName + " number " + strconv.Itoa(i)
 		res := &greetpb.GreetManyTimesResponse{
