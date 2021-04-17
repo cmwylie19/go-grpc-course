@@ -4,6 +4,8 @@ github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/cmwylie19/go-grpc-course v0.0.0-20210417142537-b7397b0b4a4c h1:cb111ehxzhoLBLOjowqODMZH39cozD53WxOaYeHNfrY=
 github.com/cmwylie19/go-grpc-course v0.0.0-20210417142537-b7397b0b4a4c/go.mod h1:uyD2qoabzKpl6pbj+k+287vDGF8irF2SVY4igAwheII=
+github.com/cmwylie19/go-grpc-course v0.0.0-20210417151847-b93d3085f337 h1:WsRqEIP2fSd5v6H4B+p2jRhzZby1/eBa/5pZvIYVzAM=
+github.com/cmwylie19/go-grpc-course v0.0.0-20210417151847-b93d3085f337/go.mod h1:uyD2qoabzKpl6pbj+k+287vDGF8irF2SVY4igAwheII=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210417142537-b7397b0b4a4c h1:enIegia4sGTycWyj7VloyPKqU4eSl2vx8qacRdXeJSY=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210417142537-b7397b0b4a4c/go.mod h1:1WChH4JkBXV61Dg9HNQOZ3K3WVF6RQ4R60beZ0YW5c4=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210417144726-6fd72e0c8d9e h1:iQQ2VFhvEWMlqXZyMu4ns0m4e6iLn5muiXmfm2uaRsk=

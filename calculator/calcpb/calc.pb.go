@@ -79,6 +79,147 @@ func (x *Calc) GetNumTwo() uint32 {
 	return 0
 }
 
+type Primes struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Num uint32 `protobuf:"varint,1,opt,name=num,proto3" json:"num,omitempty"`
+}
+
+func (x *Primes) Reset() {
+	*x = Primes{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculator_calcpb_calc_proto_msgTypes[1]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *Primes) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*Primes) ProtoMessage() {}
+
+func (x *Primes) ProtoReflect() protoreflect.Message {
+	mi := &file_calculator_calcpb_calc_proto_msgTypes[1]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use Primes.ProtoReflect.Descriptor instead.
+func (*Primes) Descriptor() ([]byte, []int) {
+	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{1}
+}
+
+func (x *Primes) GetNum() uint32 {
+	if x != nil {
+		return x.Num
+	}
+	return 0
+}
+
+type PrimesRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Primes *Primes `protobuf:"bytes,1,opt,name=primes,proto3" json:"primes,omitempty"`
+}
+
+func (x *PrimesRequest) Reset() {
+	*x = PrimesRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculator_calcpb_calc_proto_msgTypes[2]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *PrimesRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*PrimesRequest) ProtoMessage() {}
+
+func (x *PrimesRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_calculator_calcpb_calc_proto_msgTypes[2]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use PrimesRequest.ProtoReflect.Descriptor instead.
+func (*PrimesRequest) Descriptor() ([]byte, []int) {
+	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{2}
+}
+
+func (x *PrimesRequest) GetPrimes() *Primes {
+	if x != nil {
+		return x.Primes
+	}
+	return nil
+}
+
+type PrimesResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Result string `protobuf:"bytes,1,opt,name=result,proto3" json:"result,omitempty"`
+}
+
+func (x *PrimesResponse) Reset() {
+	*x = PrimesResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_calculator_calcpb_calc_proto_msgTypes[3]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *PrimesResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*PrimesResponse) ProtoMessage() {}
+
+func (x *PrimesResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_calculator_calcpb_calc_proto_msgTypes[3]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use PrimesResponse.ProtoReflect.Descriptor instead.
+func (*PrimesResponse) Descriptor() ([]byte, []int) {
+	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{3}
+}
+
+func (x *PrimesResponse) GetResult() string {
+	if x != nil {
+		return x.Result
+	}
+	return ""
+}
+
 type CalcRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -90,7 +231,7 @@ type CalcRequest struct {
 func (x *CalcRequest) Reset() {
 	*x = CalcRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_calculator_calcpb_calc_proto_msgTypes[1]
+		mi := &file_calculator_calcpb_calc_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -103,7 +244,7 @@ func (x *CalcRequest) String() string {
 func (*CalcRequest) ProtoMessage() {}
 
 func (x *CalcRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_calculator_calcpb_calc_proto_msgTypes[1]
+	mi := &file_calculator_calcpb_calc_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -116,7 +257,7 @@ func (x *CalcRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CalcRequest.ProtoReflect.Descriptor instead.
 func (*CalcRequest) Descriptor() ([]byte, []int) {
-	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{1}
+	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *CalcRequest) GetCalc() *Calc {
@@ -137,7 +278,7 @@ type CalcResponse struct {
 func (x *CalcResponse) Reset() {
 	*x = CalcResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_calculator_calcpb_calc_proto_msgTypes[2]
+		mi := &file_calculator_calcpb_calc_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -150,7 +291,7 @@ func (x *CalcResponse) String() string {
 func (*CalcResponse) ProtoMessage() {}
 
 func (x *CalcResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_calculator_calcpb_calc_proto_msgTypes[2]
+	mi := &file_calculator_calcpb_calc_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -163,7 +304,7 @@ func (x *CalcResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CalcResponse.ProtoReflect.Descriptor instead.
 func (*CalcResponse) Descriptor() ([]byte, []int) {
-	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{2}
+	return file_calculator_calcpb_calc_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *CalcResponse) GetResult() uint32 {
@@ -181,19 +322,30 @@ var file_calculator_calcpb_calc_proto_rawDesc = []byte{
 	0x63, 0x61, 0x6c, 0x63, 0x22, 0x38, 0x0a, 0x04, 0x43, 0x61, 0x6c, 0x63, 0x12, 0x17, 0x0a, 0x07,
 	0x6e, 0x75, 0x6d, 0x5f, 0x6f, 0x6e, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x06, 0x6e,
 	0x75, 0x6d, 0x4f, 0x6e, 0x65, 0x12, 0x17, 0x0a, 0x07, 0x6e, 0x75, 0x6d, 0x5f, 0x74, 0x77, 0x6f,
-	0x18, 0x02, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x06, 0x6e, 0x75, 0x6d, 0x54, 0x77, 0x6f, 0x22, 0x2d,
-	0x0a, 0x0b, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x1e, 0x0a,
-	0x04, 0x63, 0x61, 0x6c, 0x63, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x0a, 0x2e, 0x63, 0x61,
-	0x6c, 0x63, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x04, 0x63, 0x61, 0x6c, 0x63, 0x22, 0x26, 0x0a,
-	0x0c, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x16, 0x0a,
-	0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x06, 0x72,
-	0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x3e, 0x0a, 0x0b, 0x43, 0x61, 0x6c, 0x63, 0x53, 0x65, 0x72,
-	0x76, 0x69, 0x63, 0x65, 0x12, 0x2f, 0x0a, 0x04, 0x43, 0x61, 0x6c, 0x63, 0x12, 0x11, 0x2e, 0x63,
-	0x61, 0x6c, 0x63, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a,
-	0x12, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x65, 0x73, 0x70, 0x6f,
-	0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0x14, 0x5a, 0x12, 0x2f, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c,
-	0x61, 0x74, 0x6f, 0x72, 0x2f, 0x63, 0x61, 0x6c, 0x63, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x33,
+	0x18, 0x02, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x06, 0x6e, 0x75, 0x6d, 0x54, 0x77, 0x6f, 0x22, 0x1a,
+	0x0a, 0x06, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x73, 0x12, 0x10, 0x0a, 0x03, 0x6e, 0x75, 0x6d, 0x18,
+	0x01, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x03, 0x6e, 0x75, 0x6d, 0x22, 0x35, 0x0a, 0x0d, 0x50, 0x72,
+	0x69, 0x6d, 0x65, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x24, 0x0a, 0x06, 0x70,
+	0x72, 0x69, 0x6d, 0x65, 0x73, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x0c, 0x2e, 0x63, 0x61,
+	0x6c, 0x63, 0x2e, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x73, 0x52, 0x06, 0x70, 0x72, 0x69, 0x6d, 0x65,
+	0x73, 0x22, 0x28, 0x0a, 0x0e, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f,
+	0x6e, 0x73, 0x65, 0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20,
+	0x01, 0x28, 0x09, 0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x2d, 0x0a, 0x0b, 0x43,
+	0x61, 0x6c, 0x63, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x1e, 0x0a, 0x04, 0x63, 0x61,
+	0x6c, 0x63, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x0a, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x2e,
+	0x43, 0x61, 0x6c, 0x63, 0x52, 0x04, 0x63, 0x61, 0x6c, 0x63, 0x22, 0x26, 0x0a, 0x0c, 0x43, 0x61,
+	0x6c, 0x63, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x16, 0x0a, 0x06, 0x72, 0x65,
+	0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0d, 0x52, 0x06, 0x72, 0x65, 0x73, 0x75,
+	0x6c, 0x74, 0x32, 0x77, 0x0a, 0x0b, 0x43, 0x61, 0x6c, 0x63, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63,
+	0x65, 0x12, 0x2f, 0x0a, 0x04, 0x43, 0x61, 0x6c, 0x63, 0x12, 0x11, 0x2e, 0x63, 0x61, 0x6c, 0x63,
+	0x2e, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e, 0x63,
+	0x61, 0x6c, 0x63, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x22, 0x00, 0x12, 0x37, 0x0a, 0x06, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x73, 0x12, 0x13, 0x2e, 0x63,
+	0x61, 0x6c, 0x63, 0x2e, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73,
+	0x74, 0x1a, 0x14, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x2e, 0x50, 0x72, 0x69, 0x6d, 0x65, 0x73, 0x52,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x30, 0x01, 0x42, 0x14, 0x5a, 0x12, 0x2f,
+	0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2f, 0x63, 0x61, 0x6c, 0x63, 0x70,
+	0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -208,21 +360,27 @@ func file_calculator_calcpb_calc_proto_rawDescGZIP() []byte {
 	return file_calculator_calcpb_calc_proto_rawDescData
 }
 
-var file_calculator_calcpb_calc_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_calculator_calcpb_calc_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
 var file_calculator_calcpb_calc_proto_goTypes = []interface{}{
-	(*Calc)(nil),         // 0: calc.Calc
-	(*CalcRequest)(nil),  // 1: calc.CalcRequest
-	(*CalcResponse)(nil), // 2: calc.CalcResponse
+	(*Calc)(nil),           // 0: calc.Calc
+	(*Primes)(nil),         // 1: calc.Primes
+	(*PrimesRequest)(nil),  // 2: calc.PrimesRequest
+	(*PrimesResponse)(nil), // 3: calc.PrimesResponse
+	(*CalcRequest)(nil),    // 4: calc.CalcRequest
+	(*CalcResponse)(nil),   // 5: calc.CalcResponse
 }
 var file_calculator_calcpb_calc_proto_depIdxs = []int32{
-	0, // 0: calc.CalcRequest.calc:type_name -> calc.Calc
-	1, // 1: calc.CalcService.Calc:input_type -> calc.CalcRequest
-	2, // 2: calc.CalcService.Calc:output_type -> calc.CalcResponse
-	2, // [2:3] is the sub-list for method output_type
-	1, // [1:2] is the sub-list for method input_type
-	1, // [1:1] is the sub-list for extension type_name
-	1, // [1:1] is the sub-list for extension extendee
-	0, // [0:1] is the sub-list for field type_name
+	1, // 0: calc.PrimesRequest.primes:type_name -> calc.Primes
+	0, // 1: calc.CalcRequest.calc:type_name -> calc.Calc
+	4, // 2: calc.CalcService.Calc:input_type -> calc.CalcRequest
+	2, // 3: calc.CalcService.Primes:input_type -> calc.PrimesRequest
+	5, // 4: calc.CalcService.Calc:output_type -> calc.CalcResponse
+	3, // 5: calc.CalcService.Primes:output_type -> calc.PrimesResponse
+	4, // [4:6] is the sub-list for method output_type
+	2, // [2:4] is the sub-list for method input_type
+	2, // [2:2] is the sub-list for extension type_name
+	2, // [2:2] is the sub-list for extension extendee
+	0, // [0:2] is the sub-list for field type_name
 }
 
 func init() { file_calculator_calcpb_calc_proto_init() }
@@ -244,7 +402,7 @@ func file_calculator_calcpb_calc_proto_init() {
 			}
 		}
 		file_calculator_calcpb_calc_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CalcRequest); i {
+			switch v := v.(*Primes); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -256,6 +414,42 @@ func file_calculator_calcpb_calc_proto_init() {
 			}
 		}
 		file_calculator_calcpb_calc_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*PrimesRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calculator_calcpb_calc_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*PrimesResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calculator_calcpb_calc_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*CalcRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_calculator_calcpb_calc_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CalcResponse); i {
 			case 0:
 				return &v.state
@@ -274,7 +468,7 @@ func file_calculator_calcpb_calc_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_calculator_calcpb_calc_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   3,
+			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
@@ -301,6 +495,7 @@ const _ = grpc.SupportPackageIsVersion6
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type CalcServiceClient interface {
 	Calc(ctx context.Context, in *CalcRequest, opts ...grpc.CallOption) (*CalcResponse, error)
+	Primes(ctx context.Context, in *PrimesRequest, opts ...grpc.CallOption) (CalcService_PrimesClient, error)
 }
 
 type calcServiceClient struct {
@@ -320,9 +515,42 @@ func (c *calcServiceClient) Calc(ctx context.Context, in *CalcRequest, opts ...g
 	return out, nil
 }
 
+func (c *calcServiceClient) Primes(ctx context.Context, in *PrimesRequest, opts ...grpc.CallOption) (CalcService_PrimesClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_CalcService_serviceDesc.Streams[0], "/calc.CalcService/Primes", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &calcServicePrimesClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type CalcService_PrimesClient interface {
+	Recv() (*PrimesResponse, error)
+	grpc.ClientStream
+}
+
+type calcServicePrimesClient struct {
+	grpc.ClientStream
+}
+
+func (x *calcServicePrimesClient) Recv() (*PrimesResponse, error) {
+	m := new(PrimesResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
 // CalcServiceServer is the server API for CalcService service.
 type CalcServiceServer interface {
 	Calc(context.Context, *CalcRequest) (*CalcResponse, error)
+	Primes(*PrimesRequest, CalcService_PrimesServer) error
 }
 
 // UnimplementedCalcServiceServer can be embedded to have forward compatible implementations.
@@ -331,6 +559,9 @@ type UnimplementedCalcServiceServer struct {
 
 func (*UnimplementedCalcServiceServer) Calc(context.Context, *CalcRequest) (*CalcResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Calc not implemented")
+}
+func (*UnimplementedCalcServiceServer) Primes(*PrimesRequest, CalcService_PrimesServer) error {
+	return status.Errorf(codes.Unimplemented, "method Primes not implemented")
 }
 
 func RegisterCalcServiceServer(s *grpc.Server, srv CalcServiceServer) {
@@ -355,6 +586,27 @@ func _CalcService_Calc_Handler(srv interface{}, ctx context.Context, dec func(in
 	return interceptor(ctx, in, info, handler)
 }
 
+func _CalcService_Primes_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(PrimesRequest)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(CalcServiceServer).Primes(m, &calcServicePrimesServer{stream})
+}
+
+type CalcService_PrimesServer interface {
+	Send(*PrimesResponse) error
+	grpc.ServerStream
+}
+
+type calcServicePrimesServer struct {
+	grpc.ServerStream
+}
+
+func (x *calcServicePrimesServer) Send(m *PrimesResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
 var _CalcService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "calc.CalcService",
 	HandlerType: (*CalcServiceServer)(nil),
@@ -364,6 +616,12 @@ var _CalcService_serviceDesc = grpc.ServiceDesc{
 			Handler:    _CalcService_Calc_Handler,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "Primes",
+			Handler:       _CalcService_Primes_Handler,
+			ServerStreams: true,
+		},
+	},
 	Metadata: "calculator/calcpb/calc.proto",
 }

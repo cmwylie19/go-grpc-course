@@ -8,6 +8,18 @@ message Calc{
     uint32 num_two = 2;
 }
 
+message Primes {
+    uint32 num =1;
+}
+
+message PrimesRequest {
+    Primes primes =1;
+}
+
+message PrimesResponse {
+    string result =1;
+}
+
 message CalcRequest {
     Calc calc =1;
 }
@@ -18,4 +30,5 @@ message CalcResponse {
 
 service CalcService{
     rpc Calc(CalcRequest) returns (CalcResponse) {};
+    rpc Primes(PrimesRequest) returns (stream PrimesResponse) {};
 }
