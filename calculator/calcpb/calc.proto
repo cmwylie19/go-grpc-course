@@ -8,10 +8,6 @@ message Calc{
     uint32 num_two = 2;
 }
 
-message Primes {
-    uint32 num =1;
-}
-
 message PrimeNumberDecompositionRequest {
     int64 number =1;
 }

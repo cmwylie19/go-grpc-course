@@ -10,6 +10,8 @@ github.com/cmwylie19/go-grpc-course/calculator/calcpb v0.0.0-20210415234357-9929
 github.com/cmwylie19/go-grpc-course/calculator/calcpb v0.0.0-20210415234357-992991d2b455/go.mod h1:ySYCtqT/TSXEITe6xZKjCn+zrEYmEMaRpwJnIBf+es4=
 github.com/cmwylie19/go-grpc-course/calculator/calcpb v0.0.0-20210417151847-b93d3085f337 h1:LVimgqVrNTGZD2lFwP63wC5mc+PeKOKHegbErQabi+0=
 github.com/cmwylie19/go-grpc-course/calculator/calcpb v0.0.0-20210417151847-b93d3085f337/go.mod h1:ySYCtqT/TSXEITe6xZKjCn+zrEYmEMaRpwJnIBf+es4=
+github.com/cmwylie19/go-grpc-course/calculator/calcpb v0.0.0-20210417225742-e38832030529 h1:9GzSS4X+WI9Th24dvAYUSnSfEEOjxpaHc4O7bmNzalQ=
+github.com/cmwylie19/go-grpc-course/calculator/calcpb v0.0.0-20210417225742-e38832030529/go.mod h1:ySYCtqT/TSXEITe6xZKjCn+zrEYmEMaRpwJnIBf+es4=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210415232515-76c76b5e6c65 h1:NS7DM+hxCikwBxiJY+4UIsedh5WkIf+z4v7P0s6bOYc=
 github.com/cmwylie19/go-grpc-course/greet/greetpb v0.0.0-20210415232515-76c76b5e6c65/go.mod h1:1WChH4JkBXV61Dg9HNQOZ3K3WVF6RQ4R60beZ0YW5c4=
 github.com/cncf/udpa/go v0.0.0-20201120205902-5459f2c99403/go.mod h1:WmhPx2Nbnhtbo57+VJT5O0JRkEi1Wbu0z5j0R8u5Hbk=
