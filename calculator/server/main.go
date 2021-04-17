@@ -24,18 +24,23 @@ func (*server) Calc(ctx context.Context, req *calcpb.CalcRequest) (*calcpb.CalcR
 	return res, nil
 }
 
-func (*server) Primes(req *calcpb.PrimesRequest, stream calcpb.CalcService_PrimesServer) error {
-	fmt.Printf("Primes function was invoked: %v", req)
-	Num := req.GetPrimes().GetNum()
-	k := 2
-	for Num > 1 {
-		if Num%k == 0 {
-			fmt.Println(k)
-			Num = Num / k
+func (*server) PrimeNumberDecomposition(req *calcpb.PrimeNumberDecompositionRequest, stream calcpb.CalcService_PrimeNumberDecompositionServer) error {
+	fmt.Printf("PrimeNumberDecompositionRPC function was invoked: %v", req)
+	number := req.GetNumber().GetNumber()
+	divisor := int64(2)
+
+	for number > 1 {
+		if number%divisor == 0 {
+			stream.Send(&calcpb.PrimeNumberDecompositionResponse{
+				PrimeFactor: divisor,
+			})
+			number = number / divisor
 		} else {
-			k = k + 1
+			divisor += 1
+			fmt.Printf("Divisor has increased to %v", divisor)
 		}
 	}
+	return nil
 }
 func main() {
 	fmt.Println("Server")
